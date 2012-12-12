@@ -12,7 +12,7 @@
         {
             "matches":["http://developers.google.com/*","https://developers.google.com/*"],
             "css":["css/content.css"],
-            "js":["js/jquery.js","js/content.js"],
+            "js":["js/jquery.js","js/when.js","js/content.js"],
             "all_frames": true
         }
     ],
