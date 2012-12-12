@@ -1,0 +1,28 @@
+{
+    "name": "GDG Meeting Notifier",
+    "manifest_version": 2,
+    "version":"0.0.1",
+    "description": "With the help of GDG Meeting Notifier you will never miss another GDG meeting again. The GDGM Notifier gives you a countdown to your next GDG meeting. It also allows you to directly add your name to the roster.",
+    "icons": { "128": "img/logo_128.png" },
+    "background": {
+        "persistent": true,
+        "page": "bg.html"
+    },
+    "content_scripts":[
+        {
+            "matches":["http://developers.google.com/*","https://developers.google.com/*"],
+            "css":["css/content.css"],
+            "js":["js/jquery.js","js/content.js"],
+            "all_frames": true
+        }
+    ],
+    "permissions": [
+        "http://developers.google.com/*",
+        "https://developers.google.com/*"
+    ],
+    "browser_action": {
+        "default_title": "",
+        "default_icon": "img/logo_19.png",
+        "default_popup": "popup.html"
+    }
+}
