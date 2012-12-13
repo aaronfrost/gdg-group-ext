@@ -1,0 +1,15 @@
+body.events #event-details-beta{
+    width: 35% !important;
+}
+
+#gc-topnav, #sandbar{
+    display:none !important;
+}
+
+#gc-appbar{
+    padding: 4px 7px !important;
+}
+
+#gc-main{
+    padding: 0 10px;
+}
